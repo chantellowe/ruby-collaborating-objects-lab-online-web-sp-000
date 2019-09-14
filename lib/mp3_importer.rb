@@ -14,6 +14,7 @@ class MP3Importer
         @files << files
       end
     end
+    @files
   end
   
   def import 
