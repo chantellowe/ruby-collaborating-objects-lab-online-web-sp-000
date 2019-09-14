@@ -1,6 +1,6 @@
 class Song
- attr_accessor :genre, :name
- attr_reader :artist
+ attr_accessor :name, :artist
+ #attr_reader :artist
   
   def initialize(name)
     @name = name
@@ -14,10 +14,10 @@ class Song
     @@all
   end
 
-  def artist=(artist)
-    @artist = artist
-    artist.add_song(self) unless artist.songs.include?(self)
-  end
+  #def artist=(artist)
+   # @artist = artist
+   # artist.add_song(self) unless artist.songs.include?(self)
+ # end
   
   def artist_name=(name)
     self.artist = Artist.find_or_create_by_name(name)
