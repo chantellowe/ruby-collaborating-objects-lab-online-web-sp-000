@@ -19,7 +19,7 @@ class Song
     artist.add_song(self) unless artist.songs.include?(self)
   end
   
-  def artist_name=(artist_name)
+  def artist_name=(name)
     
   end
 
