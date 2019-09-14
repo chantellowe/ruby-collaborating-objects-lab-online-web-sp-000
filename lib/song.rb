@@ -5,17 +5,13 @@ class Song
   def initialize(name)
     @name = name
     @artist = nil
+    @@all << self
   end
 
   @@all = []
 
   def self.all
     @@all
-  end
-
-  def save
-    @@all << self
-    self
   end
 
   def artist=(artist)
