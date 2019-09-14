@@ -27,7 +27,7 @@ class Artist
 			if artist.name == name
 				artist
 			else
-				new_artist = Artist.new(name)
+				Artist.new(name)
 			end
 		end
 	end
