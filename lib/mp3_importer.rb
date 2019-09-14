@@ -9,7 +9,8 @@ class MP3Importer
   def files
     @files = []
     file = Dir.entries(@path)
-    file.each do 
+    file.each do |file|
+      
   end
   
   def import 
